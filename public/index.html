@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-
 <html>
-
 	<head>
-		<title>Timestamp microservice</title>
-
-		<!-- <link href="/public/css/main.css" rel="stylesheet" type="text/css"> -->
+		<title>Timestamp Microservice</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 	<body>
-			<div class="container">
-					<h1 class="header">
-							API Basejump: Timestamp microservice
-					</h1>
-					<blockquote>
-							User stories:
-							<ol>
-									<li>I can pass a string as a parameter, and it will check to see whether that string
-									contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
-									<li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
-									<li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
-							<ol>
-					</blockquote>
-					<h3>Example usage:</h3>
-					<code>https://infinite-bayou-1134.herokuapp.com/January%201,%202016</code><br>
-					<code>https://infinite-bayou-1134.herokuapp.com/1451606400</code>
-					<h3>Example output:</h3>
-					<code>
-							{
-								"unix": 1451606400,
-								"natural": "January 1, 2016"
-							}
-					</code>
-			</div>
+		<div class="container">
+			<h1 class="header">
+				API Basejump: Timestamp microservice
+			</h1>
+			<blockquote>
+				User stories:
+				<ol>
+					<li>I can pass a string as a parameter, and it will check to see whether that string
+					contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+					<li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+					<li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+				</ol>
+			</blockquote>
+			<h3>Example usage:</h3>
+			<code>https://infinite-bayou-1134.herokuapp.com/January%201,%202016</code><br>
+			<code>https://infinite-bayou-1134.herokuapp.com/1451606400</code>
+			<h3>Example output:</h3>
+			<code>
+					{
+						"unix": 1451606400,
+						"natural": "January 1, 2016"
+					}
+			</code>
+		</div>
 	</body>
 </html>
